@@ -23,6 +23,8 @@ NOTICE: This file has been modified by Nordic Semiconductor ASA.
 /* NOTE: Template files (including this one) are application specific and therefore expected to
    be copied into the application project folder prior to its use! */
    
+#ifdef NRF52840_XXAA
+
 #include <stdint.h>
 #include <stdbool.h>
 #include "nrf.h"
@@ -177,3 +179,6 @@ void SystemInit(void)
 }
 
 /*lint --flb "Leave library region" */
+
+#endif
+
