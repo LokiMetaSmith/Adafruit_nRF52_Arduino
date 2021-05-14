@@ -139,7 +139,7 @@ static uint32_t fal_program (uint32_t dst, void const * src, uint32_t len)
   // Somehow S140 v6.1.1 assert an error when writing a whole page
   // https://devzone.nordicsemi.com/f/nordic-q-a/40088/sd_flash_write-cause-nrf_fault_id_sd_assert
   // Workaround: write half page at a time.
-#if NRF52832_XXAA
+#ifdef NRF52832_XXAA
   while ( NRF_ERROR_BUSY == (err = sd_flash_write((uint32_t*) dst, (uint32_t const *) src, len/4)) )
   {
     delay(1);

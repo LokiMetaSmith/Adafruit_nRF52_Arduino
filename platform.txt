@@ -80,7 +80,6 @@ compiler.elf2bin.extra_flags=
 compiler.elf2hex.extra_flags=
 
 
-
 # Compile patterns
 # ----------------
 
