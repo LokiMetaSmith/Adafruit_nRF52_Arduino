@@ -5,7 +5,11 @@ GROUP(-lgcc -lc -lnosys)
 
 MEMORY
 {
-  FLASH (rx)     : ORIGIN = 0x26000, LENGTH = 0x6D000 - 0x26000
+ /*
+ * code flash 0x00000000
+ */
+
+  FLASH (rx)     : ORIGIN = 0x26000, LENGTH = 0xED000 - 0x26000
 
   /* SRAM required by Softdevice depend on
    * - Attribute Table Size (Number of Services and Characteristics)
@@ -13,8 +17,10 @@ MEMORY
    * - Max ATT MTU
    * - Concurrent connection peripheral + central + secure links
    * - Event Len, HVN queue, Write CMD queue
+   Starts at 0x20000000 ends at 0x40000000
+   
    */ 
-  RAM (rwx) :  ORIGIN = 0x20006000, LENGTH = 0x20040000 - 0x20006000
+  RAM (rwx) :  ORIGIN = 0x20006000, LENGTH = 0x20020000 - 0x20006000
 }
 
 SECTIONS
