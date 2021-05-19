@@ -64,7 +64,7 @@ typedef struct ATTR_PACKED
   };
 
   uint8_t buttons;
-}hid_gamepad_report_t;
+}ble_hid_gamepad_report_t;
 
 
 class BLEHidGeneric : public BLEService
