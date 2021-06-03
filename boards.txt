@@ -426,7 +426,7 @@ op1.build.vid=0x239A
 op1.build.pid=0x8029
 
 # SofDevice Menu
-op1.menu.softdevice.s140v6=0.3.2 SoftDevice s140 6.1.1
+op1.menu.softdevice.s140v6=0.5.0 SoftDevice s140 6.1.1
 op1.menu.softdevice.s140v6.build.sd_name=s140
 op1.menu.softdevice.s140v6.build.sd_version=6.1.1
 op1.menu.softdevice.s140v6.build.sd_fwid=0x00B6
@@ -471,7 +471,7 @@ generic_nrf52833.build.vid=0x1915
 generic_nrf52833.build.pid=0x521F
 
 # SofDevice Menu
-generic_nrf52833.menu.softdevice.s140v6=0.3.2 SoftDevice s140 6.1.1
+generic_nrf52833.menu.softdevice.s140v6=0.5.0 SoftDevice s140 6.1.1
 generic_nrf52833.menu.softdevice.s140v6.build.sd_name=s140
 generic_nrf52833.menu.softdevice.s140v6.build.sd_version=6.1.1
 generic_nrf52833.menu.softdevice.s140v6.build.sd_fwid=0x00B6
